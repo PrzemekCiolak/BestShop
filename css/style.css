@@ -1,0 +1,54 @@
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #A5A5A5;
+    --color-light-gray: #F7F7F7; 
+}
+
+header {
+    width: 100%;
+    background-image: url("../images/Background.png");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.container {
+    width: 1352px;
+}
+
+.nav-bar {
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-bar-logo {
+    font-family: Raleway, sans-serif;
+    color: #08A6E4;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.nav-bar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-bar-menu li{
+    display: inline-block;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    padding-right: 95px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: var(--color-gray);
+    font-size: 11px;
+    text-align: center;
+}
