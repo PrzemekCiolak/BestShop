@@ -1,5 +1,5 @@
 # BestShop
-My second project, one-page type website. Virtual company which offers services management for online shops.
+My second project, responsive, one-page type website. Virtual company which offers services management for online shops.
 
 ![obraz](https://user-images.githubusercontent.com/104730268/174408541-1e54908c-a292-4126-abe2-65ce9b41a23f.png)
 ![obraz](https://user-images.githubusercontent.com/104730268/174408594-6e989f80-d3fe-4e7b-a0a4-b868794eb3b0.png)
