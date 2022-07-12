@@ -9,3 +9,9 @@
         @content;
     }
 }
+
+@mixin mobileContainer {
+    @media (max-width: 1352px) {
+        @content;
+    }
+}
