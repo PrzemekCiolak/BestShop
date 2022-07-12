@@ -5,15 +5,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+        margin-top: 60px;
+    }
 }
 
 .pricing h2 {
     text-align: center;
+
+    @include mobile {
+        font-size: 36px;
+    }
 }
 
 .pricing-boxes {
     display: flex;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .pricing-box1 {

@@ -9,6 +9,7 @@ header {
     align-items: center;
 
     @include mobile {
+        background-size: 170%;
         height: 100vh;
     }
 }

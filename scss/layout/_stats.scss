@@ -2,6 +2,12 @@ h2 {
     font-family: var(--primary-font);
     font-size: 36px;
     color: var(--color-black);
+
+    @include mobile {
+        font-size: 30px;
+        max-width: 310px;
+        text-align: center;
+    }
 }
 
 .stats {
@@ -16,6 +22,10 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .stats-boxes-one,
@@ -24,6 +34,10 @@ h2 {
     padding: 100px;
     text-align: center;
     position: relative;
+
+    @include mobile {
+        padding: 25px;
+    }
 }
 
 .stats-boxes-numbers {
@@ -51,6 +65,11 @@ h2 {
     left: 110px;
     border-radius: 50%;
     z-index: -1;
+
+    @include mobile {
+        top: 10%;
+        left: 17%;
+    }
 }
 
 .stats-boxes-two::after {
@@ -63,6 +82,11 @@ h2 {
     left: 130px;
     border-radius: 50%;
     z-index: -1;
+
+    @include mobile {
+        top: 7%;
+        left:28%;
+    }
 }
 
 .stats-boxes-three::after {
@@ -75,4 +99,9 @@ h2 {
     left: 110px;
     border-radius: 50%;
     z-index: -1;
+
+    @include mobile {
+        top: 12%;
+        left: 20%;
+    }
 }
