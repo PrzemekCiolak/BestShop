@@ -5,6 +5,11 @@
     align-items: center;
     margin-top: 173px;
     padding-bottom: 59px;
+
+    @include mobile {
+        margin-top: 50px;
+        flex-direction: column;
+    }
 }
 
 .contact-info {
@@ -13,12 +18,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include mobile {
+        max-width: 312px;
+        height: auto;
+    }
 }
 
 .contact-info-header {
     font-family: var(--primary-font);
     font-size: 49px;
     margin-bottom: 22px;
+
+    @include mobile {
+        font-size: 40px;
+    }
 }
 
 .contact-info-text {
@@ -31,12 +45,33 @@
     width: 440px;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+        margin-top: 55px;
+        max-width: 312px;
+    }
 }
 
 .contact-info-data {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mobile {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.contact-info-data-top {
+    margin-bottom: 16px;
+}
+
+.contact-info-data-top,
+.contact-info-data-bottom {
+    @include mobile {
+        display: flex;
+}
 }
 
 .contact-info-data-mail {

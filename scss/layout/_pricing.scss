@@ -7,6 +7,7 @@
     align-items: center;
 
     @include mobile {
+        width: 100%;
         margin-top: 60px;
     }
 }
@@ -35,6 +36,23 @@
     border: 1px solid var(--color-redish);
     border-radius: 18px;
     margin-top: 71px;
+
+    @include mobile {
+        max-width: 290px;
+        max-height: 250px;
+        margin-top: 15px;
+    }
+}
+
+.pricing-box-content {
+    @include mobile {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 h3 {
@@ -43,6 +61,16 @@ h3 {
     font-weight: bold;
     margin-bottom: 14px;
     margin-top: 34px;
+
+    @include mobile {
+        margin:0;
+    }
+}
+
+.pricing-box-header {
+    @include mobile {
+        margin-right: 15px;
+    }
 }
 
 .prices {
@@ -51,12 +79,25 @@ h3 {
     font-weight: 300;
     color: var(--color-redish);
     margin-bottom: 69px;
+
+    @include mobile {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .pricing-box-list {
     font-family: var(--secondary-font);
     font-size: 14px;
     margin-bottom: 55px;
+
+    @include mobile {
+        margin: 0;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .pricing-box-button {
@@ -71,6 +112,10 @@ h3 {
     padding: 16px 57px;
     border-radius: 23px;
     cursor: pointer;
+
+    @include mobile {
+        bottom: -23%;
+    }
 }
 
 .pricing-box-list li {
@@ -100,6 +145,10 @@ h3 {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 61px;
+
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .pricing-box2 {
@@ -111,6 +160,19 @@ h3 {
     margin-left: 59px;
     margin-right: 59px;
     margin-top: 50px;
+
+    @include mobile {
+        max-width: 340px;
+        max-height: 280px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    // .pricing-box-content {
+    //     @include mobile {
+    //         max-width: 293px;
+    //     }
+    // }
 }
 
 .pricing-box2 .prices {
@@ -127,6 +189,10 @@ h3 {
     background-color: var(--color-primary);
     bottom: -35px;
 
+    @include mobile {
+        bottom: -20%;
+    }
+
 }
 
 .pricing-box3 {
@@ -136,6 +202,11 @@ h3 {
     border: 1px solid var(--color-green);
     border-radius: 18px;
     margin-top: 71px;
+
+    @include mobile {
+        max-width: 290px;
+        max-height: 250px;
+    }
 }
 
 .pricing-box3 .prices {
@@ -147,4 +218,8 @@ h3 {
 .pricing-box3 .pricing-box-button {
     background-color: var(--color-green);
     bottom: -29px;
+
+    @include mobile {
+        bottom: -23%;
+    }
 }

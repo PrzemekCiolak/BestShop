@@ -526,8 +526,6 @@ header {
 @media (max-width: 1352px) {
   .container {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -701,15 +699,10 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 1000px) {
-  .banners {
-    height: 100%;
-  }
-}
 
 .first-banner {
   width: 1124px;
-  max-height: 370px;
+  height: 370px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -717,18 +710,13 @@ h2 {
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   margin-top: 105px;
-  padding-top: 91px;
-  padding-bottom: 38px;
   position: relative;
 }
 @media (max-width: 1000px) {
   .first-banner {
     max-height: 370px;
     max-width: 315px;
-    padding-top: 35px;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-top: 42px;
+    margin-top: 40px;
     flex-direction: column;
   }
 }
@@ -740,7 +728,6 @@ h2 {
   .first-banner-info {
     order: 2;
     width: 272px;
-    padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -772,7 +759,7 @@ h2 {
 @media (max-width: 1000px) {
   .banner-text {
     width: 270px;
-    margin-bottom: auto;
+    margin-bottom: 0;
     font-size: 14px;
   }
 }
@@ -780,14 +767,12 @@ h2 {
 @media (max-width: 1000px) {
   .first-banner-img {
     max-width: 193px;
-    max-height: 110px;
-    margin-bottom: 15px;
   }
 }
 
 .second-banner {
   width: 1124px;
-  max-height: 370px;
+  height: 370px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -795,17 +780,12 @@ h2 {
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   margin-top: 37px;
-  padding-top: 91px;
-  padding-bottom: 38px;
 }
 @media (max-width: 1000px) {
   .second-banner {
     max-height: 370px;
     max-width: 315px;
-    padding-top: 35px;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-top: 42px;
+    margin-top: 40px;
     flex-direction: column;
   }
 }
@@ -845,7 +825,6 @@ h2 {
   .second-banner-img {
     max-width: 193px;
     max-height: 110px;
-    margin-bottom: 15px;
   }
 }
 
@@ -860,10 +839,9 @@ h2 {
 }
 @media (max-width: 1000px) {
   .third-banner {
-    width: 362px;
+    max-width: 315px;
     padding-top: 35px;
-    margin-top: 75px;
-    margin-bottom: 84px;
+    margin-bottom: 60px;
     flex-direction: column;
   }
 }
@@ -882,6 +860,7 @@ h2 {
 }
 @media (max-width: 1000px) {
   .third-banner-info {
+    margin-top: 40px;
     border-radius: 5px 5px 0 0;
     height: 100%;
     align-items: center;
@@ -890,7 +869,7 @@ h2 {
     padding-left: 0;
     margin-right: 0;
     order: 1;
-    width: 361px;
+    width: 315px;
   }
   .third-banner-info h2 {
     width: 270px;
@@ -914,8 +893,9 @@ h2 {
 }
 @media (max-width: 1000px) {
   .third-banner-img {
-    width: 361px;
+    width: 315px;
     order: 2;
+    margin-bottom: 20px;
   }
 }
 
@@ -958,6 +938,7 @@ h2 {
 }
 @media (max-width: 1000px) {
   .pricing {
+    width: 100%;
     margin-top: 60px;
   }
 }
@@ -989,6 +970,24 @@ h2 {
   border-radius: 18px;
   margin-top: 71px;
 }
+@media (max-width: 1000px) {
+  .pricing-box1 {
+    max-width: 290px;
+    max-height: 250px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pricing-box-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 h3 {
   font-family: var(--primary-font);
@@ -996,6 +995,17 @@ h3 {
   font-weight: bold;
   margin-bottom: 14px;
   margin-top: 34px;
+}
+@media (max-width: 1000px) {
+  h3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pricing-box-header {
+    margin-right: 15px;
+  }
 }
 
 .prices {
@@ -1005,11 +1015,26 @@ h3 {
   color: var(--color-redish);
   margin-bottom: 69px;
 }
+@media (max-width: 1000px) {
+  .prices {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
 
 .pricing-box-list {
   font-family: var(--secondary-font);
   font-size: 14px;
   margin-bottom: 55px;
+}
+@media (max-width: 1000px) {
+  .pricing-box-list {
+    margin: 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .pricing-box-button {
@@ -1024,6 +1049,11 @@ h3 {
   padding: 16px 57px;
   border-radius: 23px;
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .pricing-box-button {
+    bottom: -23%;
+  }
 }
 
 .pricing-box-list li {
@@ -1054,6 +1084,11 @@ h3 {
   font-weight: bold;
   margin-bottom: 61px;
 }
+@media (max-width: 1000px) {
+  .limited-offer {
+    margin: 0;
+  }
+}
 
 .pricing-box2 {
   width: 405px;
@@ -1064,6 +1099,14 @@ h3 {
   margin-left: 59px;
   margin-right: 59px;
   margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  .pricing-box2 {
+    max-width: 340px;
+    max-height: 280px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .pricing-box2 .prices {
@@ -1080,6 +1123,11 @@ h3 {
   background-color: var(--color-primary);
   bottom: -35px;
 }
+@media (max-width: 1000px) {
+  .pricing-box2 .pricing-box-button {
+    bottom: -20%;
+  }
+}
 
 .pricing-box3 {
   width: 372px;
@@ -1088,6 +1136,12 @@ h3 {
   border: 1px solid var(--color-green);
   border-radius: 18px;
   margin-top: 71px;
+}
+@media (max-width: 1000px) {
+  .pricing-box3 {
+    max-width: 290px;
+    max-height: 250px;
+  }
 }
 
 .pricing-box3 .prices {
@@ -1100,6 +1154,11 @@ h3 {
   background-color: var(--color-green);
   bottom: -29px;
 }
+@media (max-width: 1000px) {
+  .pricing-box3 .pricing-box-button {
+    bottom: -23%;
+  }
+}
 
 .contact {
   max-width: 100vwx;
@@ -1109,6 +1168,12 @@ h3 {
   margin-top: 173px;
   padding-bottom: 59px;
 }
+@media (max-width: 1000px) {
+  .contact {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+}
 
 .contact-info {
   width: 440px;
@@ -1117,11 +1182,22 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
 }
+@media (max-width: 1000px) {
+  .contact-info {
+    max-width: 312px;
+    height: auto;
+  }
+}
 
 .contact-info-header {
   font-family: var(--primary-font);
   font-size: 49px;
   margin-bottom: 22px;
+}
+@media (max-width: 1000px) {
+  .contact-info-header {
+    font-size: 40px;
+  }
 }
 
 .contact-info-text {
@@ -1135,11 +1211,34 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1000px) {
+  .contact-form {
+    margin-top: 55px;
+    max-width: 312px;
+  }
+}
 
 .contact-info-data {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1000px) {
+  .contact-info-data {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.contact-info-data-top {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .contact-info-data-top,
+.contact-info-data-bottom {
+    display: flex;
+  }
 }
 
 .contact-info-data-mail {
@@ -1235,6 +1334,11 @@ footer {
 .footer-logo {
   margin-left: 137px;
 }
+@media (max-width: 1000px) {
+  .footer-logo {
+    margin-left: 15px;
+  }
+}
 
 .footer-logo-main {
   font-family: var(--primary-font);
@@ -1256,5 +1360,10 @@ footer {
 
 .social-media {
   margin-right: 137px;
+}
+@media (max-width: 1000px) {
+  .social-media {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
